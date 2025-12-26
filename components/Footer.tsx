@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
           <div className="flex flex-col items-center space-y-4">
             <div className="flex items-center justify-center space-x-1">
               <span>Feito com muito</span>
-              <Heart size={14} className="text-pink-500 fill-current" />
+              <Heart size={14} className="text-pink-500 fill-current animate-bounce-gentle" />
               <span>em Brasília</span>
             </div>
             

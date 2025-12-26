@@ -80,7 +80,7 @@ const Navbar: React.FC = () => {
                 onClick={(e) => handleNavClick(e, '#contato')}
                 className="group relative inline-flex items-center space-x-2 bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white font-kids px-6 py-2.5 rounded-full transition-all transform hover:scale-105 hover:shadow-lg ml-4"
               >
-                <Calendar size={18} className="group-hover:rotate-12 transition-transform" />
+                <Calendar size={18} className="group-hover:rotate-12 transition-transform group-hover:animate-wiggle" />
                 <span className="text-base">Reservar Data</span>
               </a>
             </div>
@@ -118,7 +118,7 @@ const Navbar: React.FC = () => {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center space-x-2 bg-gradient-to-r from-pink-500 to-orange-500 text-white px-4 py-4 rounded-2xl text-lg font-bold font-kids text-center shadow-lg active:scale-95 transition-transform"
               >
-                <MessageCircle size={22} />
+                <MessageCircle size={22} className="animate-bounce-gentle" />
                 <span>Reservar pelo WhatsApp</span>
               </a>
             </div>
