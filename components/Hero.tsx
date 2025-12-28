@@ -1,8 +1,18 @@
-
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Star, Sparkles, MapPin, Palette } from 'lucide-react';
 
 const Hero: React.FC = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const logoUrl = "https://i.postimg.cc/26Lsc5tK/result-goro.png";
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = logoUrl;
+    if (img.complete) {
+      setImageLoaded(true);
+    }
+  }, [logoUrl]);
+
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     const targetId = href.replace('#', '');
@@ -17,7 +27,6 @@ const Hero: React.FC = () => {
 
   return (
     <section id="inicio" className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-gradient-to-b from-pink-50 to-white">
-      {/* Elementos Decorativos de Fundo */}
       <div className="absolute top-20 left-10 text-yellow-300 opacity-50 animate-bounce hidden md:block">
         <Star size={48} fill="currentColor" className="animate-spin-slow" />
       </div>
@@ -63,25 +72,25 @@ const Hero: React.FC = () => {
             </div>
           </div>
           
-          <div className="flex-1 relative w-full">
-            <div className="relative z-10 w-full aspect-[4/3] rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden shadow-2xl border-8 border-white transition-transform duration-500 hover:scale-[1.02] bg-pink-100">
+          <div className="flex-1 relative w-full flex justify-center">
+            <div className={`relative z-10 w-full max-w-[720px] aspect-square rounded-[3rem] md:rounded-[4rem] overflow-hidden shadow-2xl border-[12px] border-white transition-all duration-500 hover:scale-[1.02] bg-white p-0 ${!imageLoaded ? 'shimmer-bg' : ''} animate-bounce-gentle`} style={{ animationDuration: '3.5s' }}>
               <img 
-                src="https://i.postimg.cc/FKkTJM38/brincamovel-oficial-20251225-0003.jpg" 
-                alt="Brinca Móvel - Playground Móvel Raro em Brasília"
-                className="w-full h-full object-cover"
+                src={logoUrl} 
+                alt="Brinca Móvel Oficial - Playground Móvel e Piscina de Bolinhas para Festas em Brasília DF"
+                fetchpriority="high"
                 loading="eager"
+                decoding="sync"
+                className={`w-full h-full object-contain transition-all duration-500 scale-[1.15] ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+                onLoad={() => setImageLoaded(true)}
                 width="800"
-                height="600"
-                style={{ fetchPriority: 'high' } as any}
+                height="800"
               />
             </div>
-            {/* Blob de fundo animado */}
-            <div className="absolute -inset-6 bg-yellow-200 blob-shape -z-10 animate-pulse opacity-40"></div>
+            <div className="absolute -inset-8 bg-yellow-200 blob-shape -z-10 animate-pulse opacity-30" style={{ animationDelay: '1s' }}></div>
           </div>
         </div>
       </div>
       
-      {/* Ondulação inferior suave */}
       <div className="absolute bottom-0 w-full overflow-hidden leading-[0]">
         <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-full h-12 fill-white">
           <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C58.47,112.49,122.42,113.58,181.19,103.11,250.41,90.84,281.94,77.21,321.39,56.44Z"></path>

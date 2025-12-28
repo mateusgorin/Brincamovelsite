@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -8,6 +7,8 @@ import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import VideoSection from './components/VideoSection';
+import WhatsAppFAB from './components/WhatsAppFAB';
+import Testimonials from './components/Testimonials';
 
 const App: React.FC = () => {
   return (
@@ -19,9 +20,11 @@ const App: React.FC = () => {
         <Services />
         <VideoSection />
         <Gallery />
+        <Testimonials />
         <Contact />
       </main>
       <Footer />
+      <WhatsAppFAB />
     </div>
   );
 };

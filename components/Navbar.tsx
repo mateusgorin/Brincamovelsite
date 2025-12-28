@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Calendar, MessageCircle } from 'lucide-react';
 
@@ -18,7 +17,7 @@ const Navbar: React.FC = () => {
     { name: 'O que é?', href: '#sobre' },
     { name: 'Atrações', href: '#servicos' },
     { name: 'Galeria', href: '#galeria' },
-    { name: 'Contato', href: '#contato' },
+    { name: 'Clientes', href: '#depoimentos' },
   ];
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -52,14 +51,15 @@ const Navbar: React.FC = () => {
           <div className="flex-shrink-0 flex items-center space-x-3 cursor-pointer" onClick={(e) => handleNavClick(e as any, '#')}>
             <div className="w-10 h-10 bg-pink-100 rounded-full overflow-hidden flex items-center justify-center border-2 border-pink-400">
               <img 
-                src="https://i.postimg.cc/FKkTJM38/brincamovel-oficial-20251225-0003.jpg" 
-                alt="Brinca Móvel Logo" 
+                src="https://i.postimg.cc/26Lsc5tK/result-goro.png" 
+                alt="Brinca Móvel Oficial Logo" 
                 className="w-full h-full object-cover scale-110"
               />
             </div>
             <span className="text-xl font-bold tracking-tight">
               <span className="text-pink-500">Brinca</span>
               <span className="text-orange-500">Móvel</span>
+              <span className="text-blue-500 ml-1">Oficial</span>
             </span>
           </div>
           

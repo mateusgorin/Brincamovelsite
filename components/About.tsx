@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Heart, CheckCircle, Maximize2 } from 'lucide-react';
 
@@ -51,60 +50,60 @@ const About: React.FC = () => {
           <div className="flex-1 order-1 md:order-2 w-full">
             <div className="grid grid-cols-2 gap-4">
               <div className="animate-bounce-gentle" style={{ animationDuration: '4s', animationDelay: '0s' }}>
-                <div className="rounded-[2rem] overflow-hidden shadow-lg border-4 border-white rotate-3 h-48 sm:h-64 bg-orange-200 relative transition-all duration-500 hover:scale-110 hover:rotate-0 hover:z-20 hover:shadow-2xl cursor-pointer">
+                <div className="rounded-[2rem] overflow-hidden shadow-lg border-4 border-white rotate-3 h-48 sm:h-64 bg-orange-100 relative transition-all duration-500 hover:scale-110 hover:rotate-0 hover:z-20 hover:shadow-2xl cursor-pointer">
                   <img 
-                    src="https://i.postimg.cc/pXv3MLz5/Screenshot-20251225-204830-Whats-App.jpg" 
-                    alt="Interior Carretinha" 
+                    src="https://i.postimg.cc/zX7ckWBr/result-result-paste-file.jpg" 
+                    alt="Interior do Playground Móvel em Brasília" 
                     className="w-full h-full object-cover lazy-image"
                     loading="lazy"
+                    decoding="async"
                     width="400"
                     height="400"
-                    decoding="async"
                     onLoad={handleLoad}
                   />
                 </div>
               </div>
               
               <div className="mt-8 animate-bounce-gentle" style={{ animationDuration: '5s', animationDelay: '1s' }}>
-                <div className="rounded-[2rem] shadow-lg border-4 border-white -rotate-3 h-48 sm:h-64 overflow-hidden bg-pink-200 relative transition-all duration-500 hover:scale-110 hover:rotate-0 hover:z-20 hover:shadow-2xl cursor-pointer">
+                <div className="rounded-[2rem] shadow-lg border-4 border-white -rotate-3 h-48 sm:h-64 overflow-hidden bg-pink-100 relative transition-all duration-500 hover:scale-110 hover:rotate-0 hover:z-20 hover:shadow-2xl cursor-pointer">
                   <img 
-                    src="https://i.postimg.cc/CL09pxkf/Screenshot-20251225-204814-Whats-App.jpg" 
-                    alt="Piscina de Bolinhas" 
+                    src="https://i.postimg.cc/Dy6McsZk/result-result-paste-file-(1).jpg" 
+                    alt="Playground Móvel Brasília Brinca Móvel" 
                     className="w-full h-full object-cover lazy-image"
                     loading="lazy"
+                    decoding="async"
                     width="400"
                     height="400"
-                    decoding="async"
                     onLoad={handleLoad}
                   />
                 </div>
               </div>
               
               <div className="animate-bounce-gentle" style={{ animationDuration: '4.5s', animationDelay: '0.5s' }}>
-                <div className="rounded-[2rem] shadow-lg border-4 border-white -rotate-6 h-48 sm:h-64 overflow-hidden bg-blue-200 relative transition-all duration-500 hover:scale-110 hover:rotate-0 hover:z-20 hover:shadow-2xl cursor-pointer">
+                <div className="rounded-[2rem] shadow-lg border-4 border-white -rotate-6 h-48 sm:h-64 overflow-hidden bg-blue-100 relative transition-all duration-500 hover:scale-110 hover:rotate-0 hover:z-20 hover:shadow-2xl cursor-pointer">
                   <img 
-                    src="https://i.postimg.cc/kXyzJPvg/Screenshot-20251225-204745-Whats-App.jpg" 
-                    alt="Carretinha Lateral" 
+                    src="https://i.postimg.cc/fTCrvXLZ/result-result-paste-file-(2).jpg" 
+                    alt="Estrutura externa do Playground Móvel" 
                     className="w-full h-full object-cover lazy-image"
                     loading="lazy"
+                    decoding="async"
                     width="400"
                     height="400"
-                    decoding="async"
                     onLoad={handleLoad}
                   />
                 </div>
               </div>
               
               <div className="mt-4 animate-bounce-gentle" style={{ animationDuration: '5.5s', animationDelay: '1.5s' }}>
-                <div className="rounded-[2rem] shadow-lg border-4 border-white rotate-6 h-48 sm:h-64 overflow-hidden bg-yellow-200 relative transition-all duration-500 hover:scale-110 hover:rotate-0 hover:z-20 hover:shadow-2xl cursor-pointer">
+                <div className="rounded-[2rem] shadow-lg border-4 border-white rotate-6 h-48 sm:h-64 overflow-hidden bg-yellow-100 relative transition-all duration-500 hover:scale-110 hover:rotate-0 hover:z-20 hover:shadow-2xl cursor-pointer">
                   <img 
-                    src="https://i.postimg.cc/Vk2RVNXb/Whats-App-Image-2025-12-26-at-07-07-36.jpg" 
-                    alt="Carretinha Brinca Móvel" 
+                    src="https://i.postimg.cc/m2j5SMrq/result-result-paste-file-(3).jpg" 
+                    alt="Brinca Móvel Oficial estacionada" 
                     className="w-full h-full object-cover lazy-image"
                     loading="lazy"
+                    decoding="async"
                     width="400"
                     height="400"
-                    decoding="async"
                     onLoad={handleLoad}
                   />
                 </div>
