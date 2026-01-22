@@ -83,7 +83,7 @@ const Testimonials: React.FC = () => {
           >
             <span className="font-bold text-lg md:text-xl whitespace-nowrap">Deixe sua avaliação no Google</span>
             <div className="transition-all duration-300 group-hover:scale-125 group-hover:rotate-12">
-              <Star size={24} fill="currentColor" className="text-yellow-400 animate-pulse shrink-0" />
+              <Star size={24} fill="currentColor" className="text-yellow-400 animate-spin-slow shrink-0" />
             </div>
           </a>
         </div>
