@@ -64,13 +64,13 @@ const Navbar: React.FC = () => {
           </div>
           
           <div className="hidden md:block">
-            <div className="ml-10 flex items-center space-x-6">
+            <div className="ml-4 lg:ml-10 flex items-center space-x-2 lg:space-x-6">
               {menuItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.href)}
-                  className="text-gray-600 dark:text-gray-300 hover:text-pink-500 dark:hover:text-pink-400 font-kids transition-colors px-3 py-2 text-lg font-medium"
+                  className="text-gray-600 dark:text-gray-300 hover:text-pink-500 dark:hover:text-pink-400 font-kids transition-colors px-2 lg:px-3 py-2 text-base lg:text-lg font-medium whitespace-nowrap"
                 >
                   {item.name}
                 </a>
@@ -78,7 +78,7 @@ const Navbar: React.FC = () => {
               <a 
                 href="#contato"
                 onClick={(e) => handleNavClick(e, '#contato')}
-                className="group relative inline-flex items-center space-x-2 bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white font-kids px-6 py-2.5 rounded-full transition-all transform hover:scale-105 hover:shadow-lg ml-4 shadow-pink-200/50"
+                className="group relative inline-flex items-center space-x-2 bg-gradient-to-r from-orange-500 to-pink-500 hover:from-orange-600 hover:to-pink-600 text-white font-kids px-4 lg:px-6 py-2 lg:py-2.5 rounded-full transition-all transform hover:scale-105 hover:shadow-lg ml-2 lg:ml-4 shadow-pink-200/50"
               >
                 <Calendar size={18} className="group-hover:rotate-12 transition-transform group-hover:animate-wiggle" />
                 <span className="text-base">Reservar Data</span>
