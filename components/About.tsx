@@ -8,7 +8,7 @@ const About: React.FC = () => {
   };
 
   return (
-    <section id="sobre" className="py-16 md:py-24 bg-orange-50 relative overflow-hidden">
+    <section id="sobre" className="py-16 md:py-24 bg-orange-50 relative overflow-hidden -mt-2 md:mt-0">
       <div className="absolute top-0 left-0 w-64 h-64 bg-yellow-200/50 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -69,7 +69,7 @@ const About: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex-1 order-1 md:order-2 w-full"
+            className="flex-1 w-full order-1 md:order-2"
           >
             <div className="grid grid-cols-2 gap-3 md:gap-4">
               <div className="animate-bounce-gentle" style={{ animationDuration: '4s', animationDelay: '0s' }}>
